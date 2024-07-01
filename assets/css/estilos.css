@@ -33,6 +33,10 @@ h2{
     padding: 5px;
 }
 
+p {
+    font-family: var(--fonte-texto);
+}
+
 main{
     margin: 0px auto;
     width: 70%;
@@ -142,4 +146,21 @@ main{
 .container-artigo {
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
     background-color: var(--cor-fundo);
+}
+
+.secao-artigo h2{
+    margin: 5%;
+    text-align: center;
+}
+
+.secao-artigo p, .secao-artigo__referencias {
+    padding: 0% 5%;
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5;
+}
+
+.secao-artigo__referencias {
+    font-family: var(--fonte-texto);
 }
