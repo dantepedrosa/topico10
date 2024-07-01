@@ -148,12 +148,16 @@ main{
     background-color: var(--cor-fundo);
 }
 
+.container-artigo h1{
+    margin: 5%;
+}
+
 .secao-artigo h2{
     margin: 5%;
     text-align: center;
 }
 
-.secao-artigo p, .secao-artigo__referencias {
+.secao-artigo p, .secao-artigo__referencias, .container-artigo p{
     padding: 0% 5%;
     margin-top: 10px;
     text-align: justify;
