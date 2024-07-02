@@ -180,3 +180,14 @@ main{
 strong {
     font-weight: bold;
   }
+
+  .container-horizontal {
+    display: flex;
+
+  }
+
+  .container-horizontal__imagem {
+    max-width: 30%;
+    height: auto;
+    margin: 5%;
+  }
