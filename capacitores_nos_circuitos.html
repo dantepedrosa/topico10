@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="assets\css\reset.css">
     <link rel="stylesheet" href="assets\css\estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 </head>
 
 <body>
@@ -14,15 +19,89 @@
             <li class="cabecalho__navbar__link"><a href="index.html">Home</a></li>
             <li class="cabecalho__navbar__link"><a href="introducao.html">Introdução</a></li>
             <li class="cabecalho__navbar__link"><a href="tipos_capacitores.html">Tipos de<br>Capacitores</a></li>
-            <li class="cabecalho__navbar__link active"><a href="capacitores_nos_circuitos.html">Capacitores nos<br>Circuitos Elétricos</a></li>
-            <li class="cabecalho__navbar__link"><a href="associacao_capacitores.html">Associações de<br>Capacitores</a></li>
+            <li class="cabecalho__navbar__link active"><a href="capacitores_nos_circuitos.html">Capacitores
+                    nos<br>Circuitos
+                    Elétricos</a></li>
+            <li class="cabecalho__navbar__link"><a href="associacao_capacitores.html">Associações de<br>Capacitores</a>
+            </li>
         </ul>
     </header>
 
-    <main>
-        <h1>Capacitores nos Circuitos Elétricos</h1>
-        
+    <main class="container-artigo">
+
+        <h1 id="introducao">Capacitores nos <br>Circuitos Elétricos</h1>
+    
+        <p>
+            Os capacitores desempenham papéis cruciais em uma ampla gama de circuitos elétricos, proporcionando funcionalidades
+            essenciais que vão desde o armazenamento de energia até a filtragem de sinais e a estabilização de tensão. Este conjunto
+            de tópicos explora diferentes aspectos do uso dos capacitores em circuitos elétricos, abordando desde a carga e descarga
+            em capacitores individuais até aplicações específicas em circuitos de corrente contínua e corrente alternada.
+        </p>
+    
+        <section class="secao-artigo artigo-vertical">
+            <div>
+                <h2 id="carga-e-descarga">Carga e Descarga</h2>
+                <p>
+                    O processo de carga <strong>Q</strong> e descarga <strong>V(t)</strong> de capacitores é fundamental em circuitos
+                    eletrônicos, onde capacitores armazenam energia elétrica temporariamente. Durante a carga, um capacitor acumula
+                    carga <strong>Q</strong> à medida que a diferença de potencial <strong>V</strong> aumenta entre seus terminais,
+                    seguindo a equação:
+                </p>
+                <div class="formula">
+                    \( Q(t) = CV \left( 1 - e^{-\frac{t}{RC}} \right) \)
+                </div>
+                <p>
+                    Na descarga, a tensão <strong>V(t)</strong> em um capacitor em função do tempo <strong>t</strong> é dada por:
+                </p>
+                <div class="formula">
+                    \( V(t) = V_{0} e^{-\frac{t}{RC}} \)
+                </div>
+                <p>Onde:</p>
+                <ul>
+                    <li><strong>\( Q \)</strong> é a carga no capacitor (em coulombs, C),</li>
+                    <li><strong>\( C \)</strong> é a capacitância (em farads, F),</li>
+                    <li><strong>\( V \)</strong> é a tensão da fonte (em volts, V),</li>
+                    <li><strong>\( R \)</strong> é a resistência do resistor no circuito (em ohms, Ω),</li>
+                    <li><strong>\( t \)</strong> é o tempo (em segundos, s),</li>
+                    <li><strong>\( V_{0} \)</strong> é a tensão inicial no capacitor.</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="secao-artigo artigo-vertical">
+            <div>
+                <h2 id="circuitos-de-corrente-continua">Circuitos de Corrente Contínua</h2>
+                <p>
+                    Capacitores são fundamentais em circuitos de corrente contínua (DC), onde são usados para suavizar a saída de
+                    tensão de fontes de alimentação, reduzindo variações e ondulações indesejadas. Em circuitos RC (resistor-capacitor),
+                    por exemplo, a constante de tempo \( \tau = RC \) determina a taxa de carga e descarga do capacitor,
+                    influenciando diretamente o comportamento do circuito em termos de resposta transitória e estabilização de tensão.
+                </p>
+            </div>
+        </section>
+    
+        <section class="secao-artigo artigo-vertical">
+            <div>
+                <h2 id="circuitos-de-corrente-alternada">Circuitos de Corrente Alternada</h2>
+                <p>
+                    Em circuitos de corrente alternada (AC), capacitores são empregados em configurações RLC (resistor-indutor-capacitor)
+                    para diversas funções, incluindo a ressonância em frequência, correção do fator de potência e filtragem de sinais.
+                    A reatância capacitiva \( X_{c} \) em um capacitor é dada por:
+                </p>
+                <div class="formula">
+                    \( X_{c} = \frac{1}{2 \pi f C} \)
+                </div>
+                <p>Onde:</p>
+                <ul>
+                    <li><strong>\( X_{c} \)</strong> é a reatância capacitiva (em ohms, Ω),</li>
+                    <li><strong>\( f \)</strong> é a frequência da corrente alternada (em hertz, Hz),</li>
+                    <li><strong>\( C \)</strong> é a capacitância (em farads, F).</li>
+                </ul>
+            </div>
+        </section>
+    
     </main>
+    
 
     <footer class="rodape">
         <p><i class="bi bi-c-circle"></i> Desenvolvido por Dante Pedrosa</p>

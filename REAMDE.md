@@ -48,7 +48,7 @@ Capacitores variáveis permitem ajustes precisos da capacitância e são utiliza
 
 Referência:
 
-    Boylestad, R. L., & Nashelsky, L. (2016). Electronic Devices and Circuit Theory. Boston: Pearson.
+Boylestad, R. L., & Nashelsky, L. (2016). Electronic Devices and Circuit Theory. Boston: Pearson.
 
 # Capacitores nos Circuitos Elétricos
 
