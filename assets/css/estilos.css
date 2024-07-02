@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root{
+:root {
     --cor-primaria: #1F6E8C;
     --cor-secundária: #0E2954;
     --cor-destaque: #2E8A99;
@@ -19,14 +19,14 @@ body {
     min-height: 100vh;
 }
 
-h1{
+h1 {
     font-family: var(--fonte-titulo);
     font-size: 56px;
     text-align: center;
     margin-top: 30px;
 }
 
-h2{
+h2 {
     font-family: var(--fonte-titulo);
     font-size: 42px;
     text-align: center;
@@ -37,14 +37,14 @@ p {
     font-family: var(--fonte-texto);
 }
 
-main{
+main {
     margin: 0px auto;
     width: 70%;
     padding-bottom: 30px;
     flex-grow: 1;
 }
 
-.container-home{
+.container-home {
     max-width: 800px;
 }
 
@@ -100,18 +100,18 @@ main{
     display: flex;
     justify-content: center;
     padding: 10px;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
 
-.home-container:hover{
-    transform: scale(1.05); 
+.home-container:hover {
+    transform: scale(1.05);
 }
 
 .home-container img {
     width: 35%;
     height: auto;
     margin: 5%;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
 .home-container__texto {
@@ -119,11 +119,12 @@ main{
     text-align: center;
 }
 
-.home-container__texto h2{
+.home-container__texto h2 {
     margin-top: 5px;
     color: black;
 }
-.home-container__texto ul li{
+
+.home-container__texto ul li {
     font-family: var(--fonte-texto);
     margin-top: 10px;
     color: black;
@@ -136,7 +137,7 @@ main{
     color: var(--cor-texto)
 }
 
-.rodape p{
+.rodape p {
     text-align: center;
     padding-bottom: 5px;
     font-family: var(--fonte-texto);
@@ -147,23 +148,29 @@ main{
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
     background-color: var(--cor-fundo);
     max-width: 1000px;
+    padding-bottom: 5%;
 }
 
-.container-artigo h1{
+.container-artigo h1 {
     margin: 5%;
- 
+
 }
-.secao-artigo{
+
+.secao-artigo {
     /* display: flex;
     flex-direction: row; */
 }
-.secao-artigo h2{
+
+.secao-artigo h2 {
     margin-top: 5%;
     margin-bottom: 2%;
     text-align: center;
 }
 
-.secao-artigo p, .secao-artigo ul, .secao-artigo__referencias, .container-artigo p{
+.secao-artigo p,
+.secao-artigo ul,
+.secao-artigo__referencias,
+.container-artigo p {
     font-family: var(--fonte-texto);
     padding: 0% 5%;
     margin-top: 10px;
@@ -179,15 +186,23 @@ main{
 
 strong {
     font-weight: bold;
-  }
+}
 
-  .container-horizontal {
+.container-horizontal {
     display: flex;
+    align-items: center;
 
-  }
+}
 
-  .container-horizontal__imagem {
+.container-horizontal__imagem {
     max-width: 30%;
     height: auto;
     margin: 5%;
-  }
+}
+
+.container-vertical__imagem {
+    display: block;
+    margin: 2% auto;
+    height: 200px;
+    width: auto;
+}

@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="assets\css\reset.css">
     <link rel="stylesheet" href="assets\css\estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 </head>
 
 <body>
@@ -14,15 +19,94 @@
             <li class="cabecalho__navbar__link"><a href="index.html">Home</a></li>
             <li class="cabecalho__navbar__link"><a href="introducao.html">Introdução</a></li>
             <li class="cabecalho__navbar__link"><a href="tipos_capacitores.html">Tipos de<br>Capacitores</a></li>
-            <li class="cabecalho__navbar__link"><a href="capacitores_nos_circuitos.html">Capacitores nos<br>Circuitos Elétricos</a></li>
-            <li class="cabecalho__navbar__link active"><a href="associacao_capacitores.html">Associações de<br>Capacitores</a></li>
+            <li class="cabecalho__navbar__link"><a href="capacitores_nos_circuitos.html">Capacitores
+                    nos<br>Circuitos
+                    Elétricos</a></li>
+            <li class="cabecalho__navbar__link active"><a href="associacao_capacitores.html">Associações de<br>Capacitores</a>
+            </li>
         </ul>
     </header>
 
-    <main>
-        <h1>Associações de Capacitores</h1>
-        
+    <main class="container-artigo">
+
+        <h1 id="associacoes-de-capacitores">Associações de Capacitores</h1>
+    
+        <section class="secao-artigo">
+            <div>
+                <h2 id="capacitores-em-serie">Capacitores em Série</h2>
+                <p>
+                    Quando capacitores são conectados em série, a carga total é a mesma para todos os capacitores, enquanto a
+                    tensão total é a soma das tensões individuais. Isso significa que a capacitância total (C) equivalente de
+                    capacitores em série é calculada pela fórmula:
+                </p>
+                <div class="formula">
+                    \( \frac{1}{C_{\text{eq}}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \ldots \)
+                </div>
+                <img src="./assets/img/cap-serie.jpg" alt="" class="container-vertical__imagem">
+                <p>
+                    Nessa configuração, os capacitores têm a mesma carga em todos eles, mas a tensão total é dividida entre
+                    eles. A imagem ilustrativa pode mostrar vários capacitores conectados um após o outro, com uma única
+                    corrente fluindo através de todos eles, destacando a distribuição da tensão.
+                </p>
+            </div>
+        </section>
+    
+        <section class="secao-artigo">
+            <div>
+                <h2 id="capacitores-em-paralelo">Capacitores em Paralelo</h2>
+                <p>
+                    Quando capacitores estão em paralelo, a tensão total é a mesma para todos, enquanto a carga total é a
+                    soma das cargas individuais. A capacitância total (C) equivalente de capacitores em paralelo é calculada
+                    somando-se as capacitâncias individuais:
+                </p>
+                <div class="formula">
+                    \( C_{\text{eq}} = C_1 + C_2 + C_3 + \ldots \)
+                </div>
+                <img src="./assets/img/cap-paralelo.png" alt="" class="container-vertical__imagem">
+                <p>
+                    Nessa configuração, todos os capacitores têm a mesma tensão, mas a carga total é a soma das cargas
+                    individuais de cada capacitor. A imagem sugerida pode representar vários capacitores conectados lado a
+                    lado, todos com a mesma tensão aplicada, enfatizando como a carga total é distribuída entre eles.
+                </p>
+            </div>
+        </section>
+    
+        <section class="secao-artigo">
+            
+                <h2 id="outros-arranjos-de-capacitores">Outros Arranjos de Capacitores</h2>
+                <p>
+                    Além das configurações comuns de série e paralelo, existem outros arranjos que podem ser úteis em
+                    diferentes aplicações:
+                </p>
+                <ul style="list-style-type: disc; text-indent: 10px; margin-left: 50px;">
+                    <li><strong>Associação Mista:</strong> Combina capacitores em série e paralelo para alcançar valores
+                        específicos de capacitância.</li>
+                    <li><strong>Redes em Estrela e Delta:</strong> Utilizadas em sistemas elétricos complexos para controle
+                        de potência reativa.</li>
+                    <li><strong>Hierarquias em Circuitos Integrados:</strong> Organização em múltiplas camadas para filtragem
+                        e estabilização em eletrônica avançada.</li>
+                    <li><strong>Arranjos Específicos em Microeletrônica:</strong> Configurações para minimizar ruídos e
+                        interferências em circuitos integrados.</li>
+                </ul>
+                <p>
+                    Cada tipo de configuração oferece vantagens específicas dependendo das necessidades do projeto, como
+                    eficiência, resposta de frequência e redução de interferências. As imagens sugeridas ajudam a visualizar
+                    como os capacitores se comportam em diferentes configurações elétricas, facilitando a compreensão dos
+                    conceitos apresentados.
+                </p>
+                <img src="./assets/img/star-delta.webp" alt="" class="container-vertical__imagem">
+        </section>
+    
+        <section class="secao-artigo">
+            <h2 id="referencias">Referências</h2>
+            <ol class="secao-artigo__referencias" type="1">
+                <li>[1]: Boylestad, R. L., &amp; Nashelsky, L. (2016). Electronic Devices and Circuit Theory. Boston:
+                    Pearson.</li>
+            </ol>
+        </section>
     </main>
+    
+    
 
     <footer class="rodape">
         <p><i class="bi bi-c-circle"></i> Desenvolvido por Dante Pedrosa</p>
