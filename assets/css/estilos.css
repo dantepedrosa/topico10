@@ -146,7 +146,7 @@ main{
 .container-artigo {
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
     background-color: var(--cor-fundo);
-    max-width: 1200;
+    max-width: 1000px;
 }
 
 .container-artigo h1{
